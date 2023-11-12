@@ -1,0 +1,99 @@
+.card-m {
+    width: 19.46463rem;
+    border: 1px solid blue;
+    height: 24.5rem;
+    border-radius: 0.9375rem;
+    border: 2px solid var(---color-blue);
+    background: #FBFBFB;
+    padding: 1.62rem 1.68rem 1.62rem !important;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    transition: 0.7s ease;
+}
+
+.card-m:hover {
+    cursor: pointer;
+    background-color: var(---color-blue);
+}
+
+.card-m:hover .card-title {
+    color: white;
+}
+
+.card-m:hover .card-desc {
+    color: white;
+}
+
+.image-card {
+    height: 12.1875rem;
+    width: 100%;
+    border: 2px solid var(---color-blue);
+    border-radius: 0.9375rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #FBFBFB;
+}
+
+.img-card {
+    width: 100%;
+    height: 9.4375rem;
+}
+
+.card-title {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: var(---color-blue);
+    text-align: end;
+    padding-top: 1.56rem;
+}
+
+.content {
+    display: flex;
+}
+
+.card-desc {
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(---color-blue);
+    text-align: end;
+    padding-top: 1.56rem;
+}
+
+@media (max-width: 990px) {
+    .card-m {
+        width: 24.625rem;
+        height: 8.75rem;
+        flex-direction: row;
+        padding: 0 !important;
+
+    }
+
+    .image-card {
+        border: 0;
+        align-items: normal;
+        height: 100%;
+        padding-top: 1.06rem;
+    }
+
+    .img-card {
+        width: 5.1875rem;
+        height: 6.6875rem;
+    }
+
+    .card-title {
+        font-size: 1rem;
+        padding: 0.6rem !important;
+    }
+
+    .card-desc {
+        font-size: 1rem;
+        padding-top: 0.1rem;
+        padding: 0.5rem !important;
+    }
+
+    .content a {
+        display: none;
+    }
+}
